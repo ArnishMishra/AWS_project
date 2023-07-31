@@ -1,0 +1,27 @@
+table tr th,td{
+    border:0.1rem solid black;
+}
+table tr th{
+    padding-right: 2rem;
+}
+
+.display_list{
+    width: 9rem;
+    height: 2rem;
+    padding: 0 1rem 0 1rem;
+    border: 0.1rem solid black;
+    background-color: #dedada;;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 0.2rem;
+
+
+}
+
+span{
+    display: flex;
+    justify-content: left;
+}

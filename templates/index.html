@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../static/js/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="aws_region">Choose region to display buckets:</label>
+        <select name="region" id="region">
+            <option value="" disabled selected hidden>Choose a region</option>
+          <option value="US-East(N. Virginia)">US East (N. Virginia)</option>
+          <option value="US-East(Ohio)">US East (Ohio)</option>
+          <option value="US-West(N. California)">US West (N. California)</option>
+          <option value="US-West(Oregon)">US West (Oregon)</option>
+          <option value="Canada(Central)">Canada (Central)</option>
+        </select>
+        <br>
+        <br>
+        <div class="display_list" style="cursor: pointer;" onclick="display_buckets()">List buckets</div>
+        <br>
+        <br>
+      </form>
+
+ <table id="display_bucket">   
+<thead>
+
+    <tr>
+        <th>Bucket Name</th>
+        <th>Region</th>
+      </tr>
+
+</thead>
+<tbody id="table_body">
+
+
+</tbody>
+
+</table>
+<br>
+<br>
+<label for="bucket_name">Enter Bucket Name : </label>
+<input type="text" name="" id="b_name">
+<br>
+<br>
+<label for="bucket_name">Enter number of buckets : </label>
+<input type="number" name="" id="number_of_buckets">
+<br>
+<br>
+<span>
+  <div class="display_list" style="cursor: pointer;" onclick="create_bucket()">create bucket</div> 
+  <div class="display_list" style="cursor: pointer;" onclick="number_of_buckets()">number of buckets</div>
+</span>
+<br>
+<br>
+<label for="bucket_name">Enter Bucket Name : </label>
+<input type="text" name="" id="b_name_region">
+<br>
+<br>
+
+<label for="aws_region">Choose region1 for bucket1:</label>
+        <select name="region1" id="region1">
+            <option value="" disabled selected hidden>Choose a region</option>
+          <option value="US-East(N. Virginia)">US East (N. Virginia)</option>
+          <option value="US-East(Ohio)">US East (Ohio)</option>
+          <option value="US-West(N. California)">US West (N. California)</option>
+          <option value="US-West(Oregon)">US West (Oregon)</option>
+          <option value="Canada(Central)">Canada (Central)</option>
+        </select>
+
+<label for="aws_region">Choose region2 for bucke2:</label>
+        <select name="region2" id="region2">
+            <option value="" disabled selected hidden>Choose a region</option>
+          <option value="US-East(N. Virginia)">US East (N. Virginia)</option>
+          <option value="US-East(Ohio)">US East (Ohio)</option>
+          <option value="US-West(N. California)">US West (N. California)</option>
+          <option value="US-West(Oregon)">US West (Oregon)</option>
+          <option value="Canada(Central)">Canada (Central)</option>
+        </select>
+        <br>
+        <br>
+        <div class="display_list" style="cursor: pointer;" onclick=create_choose_region()>create bucket</div>
+
+    
+
+        <br>
+        <br>
+        <label for="bucket_name">Enter Bucket Name : </label>
+        <input type="text" name="" id="buc_name">
+        <br>
+        <br>
+        <label for="bucket_name">Enter number of buckets : </label>
+        <input type="number" name="" id="num_of_buc">
+        <br>
+        <br>
+        <input type="file" name="" id="file_upload" style="visibility: hidden;">
+        <br>
+        <br>
+        <span>
+        <div class="display_list" style="cursor: pointer;" onclick="upload_files()">upload file</div>
+        
+      </span>
+
+
+
+
+
+
+      </body>
+</html>
